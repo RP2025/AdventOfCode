@@ -49,5 +49,3 @@ I share detailed walkthroughs, pseudocode, and insights to help you learn alongs
 
 ✨ Happy coding and exploring the quantum (and classical) world of Advent of Code 2025!  
 Follow me for more breakdowns, solutions, and coding insights. 🚀
-
-test for automation
