@@ -3,7 +3,7 @@ import feedparser
 import re
 
 HASHNODE_USERNAME = 'thatmoodygirl'
-RSS_FEED = f'https://hashnode.com/feed/@{HASHNODE_USERNAME}'
+RSS_FEED = f'https://rakshapahariya.hashnode.dev/rss.xml'
 README_TEMPLATE = 'README_TEMPLATE.md'
 README_OUTPUT = 'README.md'
 
