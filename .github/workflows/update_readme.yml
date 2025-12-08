@@ -1,0 +1,35 @@
+name: Auto-update README
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - '**/DAY*'
+      - 'README_TEMPLATE.md'
+      - 'update_readme.py'
+
+jobs:
+  update-readme:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
+
+      - name: Install dependencies
+        run: pip install feedparser
+
+      - name: Run README updater
+        run: python update_readme.py
+
+      - name: Commit and push changes
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add README.md
+          git commit -m "Auto-update README table with latest solutions and blog" || echo "No changes"
+          git push
