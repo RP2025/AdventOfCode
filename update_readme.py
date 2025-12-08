@@ -22,7 +22,17 @@ for entry in feed.entries:
 table_rows = []
 for idx, folder in enumerate(folders, 1):
     blog_link = blog_links.get(folder, "#")
-    table_rows.append(f"| Day {idx:02d} | [{folder}](./{folder}) | [Blog]({blog_link}) |")
+    
+    blog_title = None
+    for entry in feed.entries:
+        if re.search(rf'Day\s*{idx}', entry.title, re.IGNORECASE):
+            blog_title = entry.title
+            break
+    if not blog_title:
+        blog_title = "Blog"
+    
+    table_rows.append(f"| Day {idx:02d} | [{folder}](./{folder}) | [{blog_title}]({blog_link}) |")
+
 
 table_md = "\n".join(table_rows)
 with open(README_TEMPLATE, "r") as f:
