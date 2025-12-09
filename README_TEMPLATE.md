@@ -9,8 +9,8 @@ Each folder contains my **code and notes** for that day. For deeper explanations
 
 ## 📅 Day-by-Day Solutions & Blog Posts
 
-| Day  | Folder | Blog / Notes |
-|------|--------|--------------|
+| Day  | Folder |
+|------|--------|
 <!--DAY_TABLE-->
 
 > Note: The blog links point to my detailed write-ups on **Hashnode**, including pseudocode, explanations, and insights for each day's challenge.
