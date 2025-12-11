@@ -11,15 +11,17 @@ Each folder contains my **code and notes** for that day. For deeper explanations
 
 | Day  | Folder |
 |------|--------|
-| Day 01 | [DAY01](./DAY01)
-| Day 02 | [DAY02](./DAY02)
-| Day 03 | [DAY03](./DAY03)
-| Day 04 | [DAY04](./DAY04)
-| Day 05 | [DAY05](./DAY05)
-| Day 06 | [DAY06](./DAY06)
-| Day 07 | [DAY07](./DAY07)
-| Day 08 | [DAY08](./DAY08)
-| Day 09 | [DAY09](./DAY09)
+| Day | Folder |
+|-----|---------|
+| 01 | [DAY01](./DAY01) |
+| 02 | [DAY02](./DAY02) |
+| 03 | [DAY03](./DAY03) |
+| 04 | [DAY04](./DAY04) |
+| 05 | [DAY05](./DAY05) |
+| 06 | [DAY06](./DAY06) |
+| 07 | [DAY07](./DAY07) |
+| 08 | [DAY08](./DAY08) |
+| 09 | [DAY09](./DAY09) |
 
 > Note: The blog links point to my detailed write-ups on **Hashnode**, including pseudocode, explanations, and insights for each day's challenge.
 
