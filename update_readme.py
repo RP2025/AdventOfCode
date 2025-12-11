@@ -7,7 +7,12 @@ RSS_FEED = f'https://rakshapahariya.hashnode.dev/rss.xml'
 README_TEMPLATE = 'README_TEMPLATE.md'
 README_OUTPUT = 'README.md'
 
-folders = sorted([f for f in os.listdir('.') if os.path.isdir(f) and f.upper().startswith('DAY')])
+#folders = sorted([f for f in os.listdir('.') if os.path.isdir(f) and f.upper().startswith('DAY')])
+folders = sorted(
+    [f for f in os.listdir('.') if os.path.isdir(f) and f.upper().startswith('DAY')],
+    key=lambda x: int(re.findall(r'\d+', x)[0])
+)
+
 
 feed = feedparser.parse(RSS_FEED)
 blog_links = {}
